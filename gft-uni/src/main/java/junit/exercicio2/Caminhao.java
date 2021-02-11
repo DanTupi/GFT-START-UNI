@@ -1,11 +1,13 @@
 package junit.exercicio2;
 
-import junit.exercicio2.Transporte;
-
 public class Caminhao extends Carga implements Transporte {
+
+    public Caminhao(double valor, double peso) {
+        super(valor, peso);
+    }
 
     @Override
     public Double calculaFrete() {
-        return this.peso * 0.12 + this.valor * 0.30;
+        return ((getPeso() * 0.12) + (getValor() * 0.30));
     }
 }

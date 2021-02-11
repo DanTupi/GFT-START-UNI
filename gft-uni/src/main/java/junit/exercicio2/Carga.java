@@ -1,10 +1,16 @@
 package junit.exercicio2;
 
 public abstract class Carga {
-    protected double valor;
-    protected double peso;
+    private double valor;
+    private double peso;
 
-    public Carga() {
+    Carga() {
+
+    }
+
+    Carga(double valor, double peso) {
+        setValor(valor);
+        setPeso(peso);
 
     }
 
@@ -21,7 +27,7 @@ public abstract class Carga {
     }
 
     public void setPeso(double peso) {
-        this.peso = valor;
+        this.peso = peso;
     }
 
 }
