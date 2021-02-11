@@ -8,6 +8,10 @@ public class Vagao extends Carga implements Transporte {
 
     @Override
     public Double calculaFrete() {
-        return ((getPeso() * 0.20) + (getValor() * 0.10));
+        if (getPeso() < 15000) {
+            return ((getPeso() * 0.20) + (getValor() * 0.10) + 5000);
+        } else {
+            return ((getPeso() * 0.20) + (getValor() * 0.10));
+        }
     }
 }

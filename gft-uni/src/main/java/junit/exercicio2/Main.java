@@ -18,7 +18,7 @@ public class Main {
         Caminhao newCaminhao = new Caminhao(number1, number2);
 
         System.out.println(
-                "Frete de Vagão: $" + newVagao.calculaFrete() + "Frete de Caminhão: $" + newCaminhao.calculaFrete());
+                "Frete de Vagão: $" + newVagao.calculaFrete() + " e Frete de Caminhão: $" + newCaminhao.calculaFrete());
 
     }
 }
